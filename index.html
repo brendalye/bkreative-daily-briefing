@@ -2,244 +2,301 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>BKreative Daily Briefing — August 6, 2026</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BKreative Daily Briefing — August 7, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Jost:wght@400;500&family=Kalnia:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@600&family=Jost:wght@400;500&family=Baloo+2:wght@800&display=swap" rel="stylesheet">
 <style>
   :root {
-    --coral: #f17166; --coral-dark: #b8453b;
-    --yellow: #ffd217; --yellow-dark: #8a6d00;
-    --lavender: #e7d7ff; --lavender-dark: #5b3fa0;
-    --sky: #c5ecff; --sky-dark: #1a6f94;
-    --pink: #ffd5e3; --pink-dark: #a13c5c;
-    --cream: #feffd5; --cream-dark: #6b6600;
+    --coral: #f17166;
+    --coral-dark: #b8453b;
+    --yellow: #ffd217;
+    --yellow-dark: #8a6d00;
+    --lavender: #e7d7ff;
+    --lavender-dark: #5b3fa0;
+    --sky: #c5ecff;
+    --sky-dark: #1a6f94;
+    --pink: #ffd5e3;
+    --pink-dark: #a13c5c;
+    --cream: #feffd5;
+    --cream-dark: #6b6600;
     --ink: #3a2c28;
   }
+
   * { box-sizing: border-box; }
+
   body {
     margin: 0;
+    padding: 40px 20px;
     font-family: 'Jost', sans-serif;
     font-weight: 400;
     color: var(--ink);
-    background: linear-gradient(160deg, #feffd5 0%, #e7d7ff 45%, #c5ecff 100%);
+    background: linear-gradient(160deg, #feffe8 0%, #f3e9ff 45%, #dff4ff 100%);
     min-height: 100vh;
-    padding: 40px 16px;
   }
-  .page { max-width: 760px; margin: 0 auto; }
-  .header { text-align: center; margin-bottom: 32px; }
+
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .header {
+    text-align: center;
+    padding: 10px 0 34px;
+  }
+
   .brand {
     font-family: 'Baloo 2', sans-serif;
     font-weight: 800;
     font-size: 42px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     margin: 0;
   }
-  .brand .coral-letter { color: var(--coral); }
-  .brand .yellow-letter { color: var(--yellow-dark); }
+  .brand .c { color: var(--coral); }
+  .brand .k { color: var(--yellow-dark); }
+
   .tagline {
     font-family: 'Kalnia', serif;
     font-weight: 600;
-    font-size: 15px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: var(--coral-dark);
+    font-size: 18px;
+    color: var(--ink);
+    margin: 6px 0 0;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    color: #7a6a64;
     margin: 4px 0 0;
   }
-  .subtitle { display: none; }
+
   .date-pill {
     display: inline-block;
-    margin-top: 14px;
+    margin-top: 16px;
     padding: 8px 20px;
-    background: #ffffffaa;
-    border: 1px solid #ffffff;
+    background: #ffffffcc;
     border-radius: 999px;
     font-size: 14px;
     font-weight: 500;
-    color: var(--ink);
-    backdrop-filter: blur(4px);
+    letter-spacing: 0.3px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   }
+
   .section {
     border-radius: 18px;
     padding: 24px 26px;
     margin-bottom: 20px;
   }
+
   .section-title {
-    display: flex;
-    align-items: center;
-    gap: 10px;
     font-family: 'Kalnia', serif;
     font-weight: 600;
     font-size: 19px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
     margin: 0 0 16px;
   }
+
   .badge {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
-    min-width: 30px;
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
     background: #ffffff;
     border-radius: 50%;
-    font-size: 15px;
+    font-size: 17px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   }
-  ul.items { list-style: none; margin: 0; padding: 0; }
+
+  ul.items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
   ul.items li {
     padding: 10px 0;
-    border-bottom: 1px dashed rgba(58,44,40,0.25);
     font-size: 14.5px;
-    line-height: 1.5;
+    line-height: 1.55;
+    border-bottom: 1px dashed rgba(58,44,40,0.25);
   }
+
   ul.items li:last-child { border-bottom: none; }
+
   .bg-coral { background: var(--coral); color: #fff; }
   .bg-coral .section-title { color: #fff; }
   .bg-coral ul.items li { border-bottom-color: rgba(255,255,255,0.35); }
-  .bg-coral .src { color: #ffe9e6; }
-  .bg-yellow { background: var(--yellow); color: var(--ink); }
-  .bg-yellow .section-title { color: var(--yellow-dark); }
-  .bg-lavender { background: var(--lavender); color: var(--ink); }
-  .bg-lavender .section-title { color: var(--lavender-dark); }
-  .bg-sky { background: var(--sky); color: var(--ink); }
-  .bg-sky .section-title { color: var(--sky-dark); }
-  .bg-pink { background: var(--pink); color: var(--ink); }
-  .bg-pink .section-title { color: var(--pink-dark); }
-  .bg-cream { background: var(--cream); color: var(--ink); }
-  .bg-cream .section-title { color: var(--cream-dark); }
-  .src { font-size: 12px; opacity: 0.75; }
-  .src a { color: inherit; }
+  .bg-coral .meta { color: rgba(255,255,255,0.85); }
+
+  .bg-yellow { background: var(--yellow); color: var(--yellow-dark); }
+  .bg-yellow ul.items li { border-bottom-color: rgba(138,109,0,0.25); }
+
+  .bg-lavender { background: var(--lavender); color: var(--lavender-dark); }
+  .bg-lavender ul.items li { border-bottom-color: rgba(91,63,160,0.25); }
+
+  .bg-sky { background: var(--sky); color: var(--sky-dark); }
+  .bg-sky ul.items li { border-bottom-color: rgba(26,111,148,0.25); }
+
+  .bg-pink { background: var(--pink); color: var(--pink-dark); }
+  .bg-pink ul.items li { border-bottom-color: rgba(161,60,92,0.25); }
+
+  .bg-cream { background: var(--cream); color: var(--cream-dark); }
+  .bg-cream ul.items li { border-bottom-color: rgba(107,102,0,0.25); }
+
+  .items li b, .items li strong { font-weight: 600; }
+
   .grid-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 24px;
   }
+
   .grid-2 h4 {
-    font-family: 'Kalnia', serif;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
     font-size: 13px;
-    letter-spacing: 1px;
     text-transform: uppercase;
-    color: var(--cream-dark);
-    margin: 0 0 8px;
+    letter-spacing: 0.6px;
+    margin: 0 0 10px;
+    opacity: 0.85;
   }
+
   .placeholder-box {
-    padding: 16px;
-    border: 1px dashed rgba(58,44,40,0.35);
+    background: rgba(255,255,255,0.5);
     border-radius: 12px;
+    padding: 16px;
     font-size: 14px;
     font-style: italic;
-    opacity: 0.8;
     text-align: center;
   }
+
   .footer {
     text-align: center;
-    font-family: 'Kalnia', serif;
+    padding: 20px 0 6px;
     font-size: 13px;
-    color: var(--coral-dark);
-    margin-top: 30px;
-    padding-bottom: 10px;
+    color: #7a6a64;
   }
-  @media (max-width: 520px) {
+
+  @media (max-width: 600px) {
     .grid-2 { grid-template-columns: 1fr; }
     .brand { font-size: 34px; }
   }
 </style>
 </head>
 <body>
-  <div class="page">
-    <div class="header">
-      <h1 class="brand"><span class="coral-letter">B</span><span class="yellow-letter">K</span><span class="coral-letter">REATIVE</span></h1>
-      <p class="tagline">Team Daily Briefing</p>
-      <div class="date-pill">Thursday, August 6, 2026 · 9:00 AM MYT</div>
-    </div>
+<div class="page">
 
-    <div class="section bg-coral">
-      <h2 class="section-title"><span class="badge">🎬</span>Today's Shoots</h2>
-      <div class="placeholder-box" style="border-color: rgba(255,255,255,0.5); color:#fff; opacity:0.9;">No shoots scheduled today — calendar is clear.</div>
-    </div>
-
-    <div class="section bg-yellow">
-      <h2 class="section-title"><span class="badge">🔥</span>Trendjack Opportunities</h2>
-      <ul class="items">
-        <li><strong>Low-production, single-take content</strong> is outperforming polished posts this month — a single-take truck driver lip sync pulled 336M views on Instagram. Lean into raw, human clips over glossy edits.</li>
-        <li><strong>"Me at the same age as my parents"</strong> nostalgic photo transitions, powered by Pitbull's "Hey Baby," are big right now — good fit for founder/team-story or heritage-brand content.</li>
-        <li><strong>Paparazzi dubstep glow-up transitions</strong> (Lady Gaga remix) are still driving ugly-to-hot reveal edits — works for before/after content.</li>
-        <li><strong>The "bedazzling" trend</strong> — covering everyday objects in rhinestones/gems — is crossing over from TikTok to Instagram; easy quick-turnaround visual gag for product content.</li>
-      </ul>
-      <div class="src">Sources: <a href="https://newengen.com/insights/august-tiktok-trends/">Newengen TikTok Trends</a>, <a href="https://newengen.com/insights/instagram-trends/">Newengen Instagram Trends</a></div>
-    </div>
-
-    <div class="section bg-lavender">
-      <h2 class="section-title"><span class="badge">📱</span>Platform &amp; Algorithm Updates</h2>
-      <ul class="items">
-        <li><strong>TikTok now needs a 70%+ completion rate</strong> to go viral (up from 50% in 2024), and accounts that bounce across 3+ unrelated topics take a -45% reach penalty — stay niche-consistent per client account.</li>
-        <li><strong>Instagram's four confirmed ranking signals</strong> (per Adam Mosseri's April 2026 update): DM shares, saves, watch time, and profile clicks — chase meaningful engagement over vanity likes.</li>
-        <li><strong>Threads launched "Your Algo"</strong> on June 16, letting users curate their feed by topic; long, thoughtful replies now carry more weight than quick reactions.</li>
-      </ul>
-      <div class="src">Sources: <a href="https://www.socialync.io/blog/tiktok-algorithm-2026-what-works-now">Socialync</a>, <a href="https://musically.com/2026/06/26/threads-instagram-and-tiktok-update-customisable-algorithm-features/">Music Ally</a></div>
-    </div>
-
-    <div class="section bg-sky">
-      <h2 class="section-title"><span class="badge">🍜</span>F&amp;B Client News</h2>
-      <ul class="items">
-        <li><strong>TikTok, Reels, and YouTube Shorts now act as search engines</strong> for restaurant discovery — video-first is no longer optional for F&B clients.</li>
-        <li><strong>Visual drama still sells</strong>: shareable over-the-top items (loaded noodles, butter boards) are trending alongside "fibre-maxxing" and gut-health staples like kefir, kimchi, and kombucha.</li>
-        <li><strong>Short, snackable clips</strong> continue to outperform big-budget ads — no need to overproduce plating/close-up shots.</li>
-      </ul>
-      <div class="src">Source: <a href="https://tastewise.io/2026-trend-forecast">Tastewise 2026 Trend Forecast</a></div>
-    </div>
-
-    <div class="section bg-pink">
-      <h2 class="section-title"><span class="badge">💆</span>Lifestyle News</h2>
-      <ul class="items">
-        <li><strong>Neurowellness is going mainstream</strong> — home EEG/neuromodulation devices are getting FDA approval and insurance coverage, a fresh content angle for wellness clients.</li>
-        <li><strong>Wellbeing is going social</strong>: wellness raves, sober dance parties, and mass fitness festivals (like Hyrox) are reframing fitness as identity-driven and communal.</li>
-        <li><strong>Hospitality clients</strong> are leaning into digital detox offers, organic/vegan menus, and sleep-optimization amenities to match at-home wellness habits.</li>
-        <li><strong>Women's sports economy is surging</strong> — athletes like Coco Gauff and Ilona Maher are launching beauty and fashion lines, a strong tie-in hook for beauty/fitness clients.</li>
-      </ul>
-      <div class="src">Sources: <a href="https://www.globalwellnesssummit.com/2026trends/">Global Wellness Summit</a>, <a href="https://beautymatter.com/articles/the-future-of-wellness-2026-trends-report-key-takeaways">BeautyMatter</a></div>
-    </div>
-
-    <div class="section bg-coral">
-      <h2 class="section-title"><span class="badge">🇲🇾</span>Malaysia &amp; Klang Valley</h2>
-      <ul class="items">
-        <li><strong>Fuel prices dropped 5 sen/litre</strong> (RON97, unsubsidized RON95, diesel) starting today, Aug 6 — a timely cost-of-living angle for F&B and retail clients.</li>
-        <li><strong>Negeri Sembilan state election</strong> was held Aug 1 — political news cycle is active this week, so stay mindful around government-adjacent content.</li>
-        <li><strong>PM Anwar Ibrahim ordered fast-tracking</strong> of 15,000 foreign worker applications — relevant if any F&B/hospitality clients have touched on staffing conversations.</li>
-        <li><strong>Klang Valley has had recurring flash floods</strong> this year (mid-July, early May) — worth a quick local-conditions check before any outdoor shoot, even with a clear forecast today.</li>
-      </ul>
-      <div class="src">Sources: <a href="https://en.wikipedia.org/wiki/2026_in_Malaysia">2026 in Malaysia (Wikipedia)</a>, <a href="https://www.thestar.com.my/news/nation/2026/07/18/klang-valley-hit-by-flash-floods-after-late-afternoon-downpour">The Star</a></div>
-    </div>
-
-    <div class="section bg-cream">
-      <h2 class="section-title"><span class="badge">📅</span>Dates to Prep Content For</h2>
-      <div class="grid-2">
-        <div>
-          <h4>International</h4>
-          <ul class="items">
-            <li><strong>Aug 8 — International Cat Day</strong> (2 days out, easy pet-friendly content).</li>
-            <li><strong>Aug 9 — Int'l Day of World's Indigenous Peoples.</strong></li>
-            <li><strong>Aug 12 — International Youth Day.</strong></li>
-            <li><strong>All August — National Wellness Month</strong>, good tie-in for lifestyle clients.</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Malaysia</h4>
-          <ul class="items">
-            <li><strong>Aug 25 — Maulidur Rasul</strong> (Prophet Muhammad's Birthday, national holiday) — start planning.</li>
-            <li><strong>Aug 31 — Merdeka Day</strong> (National Day) — start planning patriotic-themed content now.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="src">Source: <a href="https://publicholidays.com.my/selangor/">PublicHolidays.com.my — Selangor</a></div>
-    </div>
-
-    <div class="section bg-lavender">
-      <h2 class="section-title"><span class="badge">⛅</span>Weather</h2>
-      <div class="placeholder-box">No shoot locations to check today — calendar had no shoots on the schedule.</div>
-    </div>
-
-    <div class="footer">Focus on your business, let us BKreative for u ♥</div>
+  <div class="header">
+    <h1 class="brand"><span class="c">B</span><span class="k">K</span><span class="c">REATIVE</span></h1>
+    <p class="tagline">Team Daily Briefing</p>
+    <p class="subtitle">Everything the team needs before the day starts</p>
+    <div class="date-pill">Friday, 7 August 2026 · 9:00 AM MYT</div>
   </div>
+
+  <!-- Shoots -->
+  <div class="section bg-coral">
+    <h3 class="section-title"><span class="badge">🎬</span> Today's Shoots &amp; Meetings</h3>
+    <ul class="items">
+      <li><b>10:00 AM – 2:00 PM</b> — <b>Purely B Event Shoot</b> <span class="meta">(no location listed on the invite — confirm with the crew before heading out)</span></li>
+      <li><b>3:00 – 4:00 PM</b> — <b>[EXT] SC x BKreative x Brokoli Sync Up</b> <span class="meta">(external, still needs RSVP)</span></li>
+      <li><b>5:30 – 6:30 PM</b> — <b>Weekly Social Girlies Catch Up</b> <span class="meta">(internal)</span></li>
+    </ul>
+  </div>
+
+  <!-- Trendjack -->
+  <div class="section bg-yellow">
+    <h3 class="section-title"><span class="badge">🔥</span> Trendjack Opportunities</h3>
+    <ul class="items">
+      <li><b>Dance Moms audio is back</b> — the "No I didn't, dingbat, LISTEN!" clip is fueling reaction and duet content across niches.</li>
+      <li><b>The "oddly therapeutic" dance clip</b> from Apple TV+'s Your Friends &amp; Neighbors is everywhere — calm, aesthetic, easy to repost for lifestyle brands.</li>
+      <li><b>Nostalgia formats are dominating</b> — "Me at the Same Age as My Parents" and childhood-photo glow-up compilations.</li>
+      <li><b>Paparazzi dubstep transition</b> (ugly-to-hot reveal) still has legs — good for before/after or reveal-style client content.</li>
+    </ul>
+  </div>
+
+  <!-- Platform & Industry News -->
+  <div class="section bg-lavender">
+    <h3 class="section-title"><span class="badge">📊</span> Platform &amp; Industry News</h3>
+    <ul class="items">
+      <li><b>TikTok now needs a 70%+ completion rate</b> to go viral, up from 50% in 2024 — front-load the hook, keep videos tight.</li>
+      <li><b>Instagram's 4 confirmed ranking signals</b> (per Adam Mosseri): DM shares, saves, watch time, profile clicks — dwell time is king.</li>
+      <li><b>Threads' new "Your Algo" feature</b> now rewards thoughtful, longer replies over quick emoji comments — low-effort engagement can hurt visibility.</li>
+      <li><b>LinkedIn is testing AI-content disclosure labels</b> for posts and comments.</li>
+      <li><b>94% of marketers now use AI</b> somewhere in their workflow (HubSpot) — the industry story this month is "proof over reach": publish content that earns trust, not just impressions.</li>
+    </ul>
+  </div>
+
+  <!-- F&B -->
+  <div class="section bg-sky">
+    <h3 class="section-title"><span class="badge">🍜</span> F&amp;B Client News</h3>
+    <ul class="items">
+      <li><b>Video is the new search bar</b> — TikTok, Reels and YouTube Shorts now function as restaurant discovery engines for diners.</li>
+      <li><b>Micro-creators are outperforming mega-influencers</b> for dining content — real engagement over big follower counts.</li>
+      <li><b>Texture and "mouthfeel" content</b> is trending hard, especially with younger audiences.</li>
+      <li><b>Viral KL spots to watch:</b> Kunafa Crisp (Bukit Bintang) and Nasi Lemak Burung Hantu (SS15, Subang Jaya) — both good trendjack/collab bait.</li>
+    </ul>
+  </div>
+
+  <!-- Lifestyle -->
+  <div class="section bg-pink">
+    <h3 class="section-title"><span class="badge">🧘</span> Lifestyle News</h3>
+    <ul class="items">
+      <li><b>Digital detox is the new flex</b> — 17% jump in searches for "unplugged" hotel stays; quiet and privacy are outshining wellness-theatre.</li>
+      <li><b>Social wellness spaces are rising</b> — sauna nights and group rituals replacing solo spa content.</li>
+      <li><b>Longevity and biohacking content</b> continues to climb for hospitality and wellness clients.</li>
+      <li><b>Fragrance layering</b> is booming on TikTok among Gen Z and Millennials — a content angle for beauty clients.</li>
+    </ul>
+  </div>
+
+  <!-- Malaysia / Klang Valley -->
+  <div class="section bg-coral">
+    <h3 class="section-title"><span class="badge">🇲🇾</span> Malaysia &amp; Klang Valley</h3>
+    <ul class="items">
+      <li><b>MACC prosecutions</b> over fraudulent PERKESO Daya Kerjaya 2.0 claims are dominating the national news cycle.</li>
+      <li><b>Klang Valley flash flooding</b> has been recurring this rainy season — worth monitoring for any outdoor shoot logistics.</li>
+      <li><b>KL's luxury hotel wave continues</b> (e.g. Irama KL, 760+ rooms) — a "global city" narrative hospitality clients can ride.</li>
+      <li><b>Cost-of-living conversation</b> (student housing, rentals) remains a hot local topic worth watching for brand tone.</li>
+    </ul>
+  </div>
+
+  <!-- Dates to Prep -->
+  <div class="section bg-cream">
+    <h3 class="section-title"><span class="badge">📅</span> Dates to Prep Content For</h3>
+    <div class="grid-2">
+      <div>
+        <h4>International</h4>
+        <ul class="items">
+          <li><b>World Breastfeeding Week</b> — wraps today, Aug 7</li>
+          <li><b>Intl Day of World's Indigenous Peoples</b> — Aug 9</li>
+          <li><b>International Youth Day</b> — Aug 12</li>
+          <li><b>International Dog Day</b> — Aug 26</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Malaysia</h4>
+        <ul class="items">
+          <li><b>Merdeka Month</b> is underway — patriotic content builds all August</li>
+          <li><b>Hari Merdeka</b> (Independence Day) — Mon, 31 Aug — start planning campaign content now</li>
+          <li>No Selangor state holiday before Merdeka Day — next one is Sultan of Selangor's Birthday, 11 Dec</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Weather -->
+  <div class="section bg-lavender">
+    <h3 class="section-title"><span class="badge">🌦️</span> Weather</h3>
+    <div class="placeholder-box">No shoot locations to check today — today's shoot invite has no location listed.</div>
+    <ul class="items" style="margin-top:14px;">
+      <li>General Klang Valley/KL outlook for reference: <b>isolated thunderstorms and moderate rain likely</b>, high near 29–30°C, humidity around 79% — worth a backup plan if the Purely B shoot is outdoors.</li>
+    </ul>
+  </div>
+
+  <div class="footer">Focus on your business, let us BKreative for u ♥</div>
+
+</div>
 </body>
 </html>
