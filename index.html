@@ -1,78 +1,104 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>BKreative Daily Briefing – 6 Oct 2026</title>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Jost:wght@400;500&family=Kalnia:wght@600&display=swap" rel="stylesheet">
+<title>BKreative Daily Briefing – 7 Oct 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Jost:wght@400;500;600&family=Kalnia:wght@600&display=swap" rel="stylesheet">
 <style>
-:root{--coral:#f17166;--coral-dark:#b8453b;--yellow:#ffd217;--yellow-dark:#8a6d00;--lavender:#e7d7ff;--lavender-dark:#5b3fa0;--sky:#c5ecff;--sky-dark:#1a6f94;--pink:#ffd5e3;--pink-dark:#a13c5c;--cream:#feffd5;--cream-dark:#6b6600;--ink:#3a2c28}
+:root{--coral:#f17166;--coral-dark:#b8453b;--yellow:#ffd217;--yellow-dark:#8a6d00;--lav:#e7d7ff;--lav-dark:#5b3fa0;--sky:#c5ecff;--sky-dark:#1a6f94;--pink:#ffd5e3;--pink-dark:#a13c5c;--cream:#feffd5;--cream-dark:#6b6600;--ink:#3a2c28}
 *{box-sizing:border-box}
-body{margin:0;font-family:'Jost',sans-serif;color:var(--ink);background:linear-gradient(160deg,var(--cream),var(--lavender) 50%,var(--sky));min-height:100vh}
-.page{max-width:760px;margin:0 auto;padding:28px 16px 40px}
-.header{text-align:center;margin-bottom:22px}
-.brand{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:54px;margin:0;color:var(--coral);letter-spacing:2px}
+body{margin:0;font-family:'Jost',sans-serif;color:var(--ink);background:linear-gradient(160deg,#feffd5 0%,#e7d7ff 50%,#c5ecff 100%);background-attachment:fixed;min-height:100vh}
+.page{max-width:760px;margin:0 auto;padding:32px 16px 48px}
+.header{text-align:center;margin-bottom:24px}
+.brand{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:56px;letter-spacing:2px;color:var(--coral);margin:0;line-height:1}
 .brand .k{color:var(--yellow)}
-.tagline{font-family:'Kalnia',serif;font-weight:600;font-size:20px;margin:0}
-.subtitle{margin:4px 0 12px;font-size:14px}
-.date-pill{display:inline-block;background:#fff;border-radius:999px;padding:7px 18px;font-weight:500;font-size:14px}
-.section{border-radius:18px;padding:20px 22px;margin-bottom:16px}
-.bg-coral{background:var(--coral);color:#fff}.bg-yellow{background:var(--yellow);color:var(--ink)}.bg-lavender{background:var(--lavender);color:var(--ink)}.bg-sky{background:var(--sky);color:var(--ink)}.bg-pink{background:var(--pink);color:var(--ink)}.bg-cream{background:var(--cream);color:var(--ink)}
-.section-title{font-family:'Kalnia',serif;font-weight:600;font-size:21px;margin:0 0 10px;display:flex;align-items:center;gap:10px}
-.badge{background:#fff;border-radius:50%;width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;font-size:17px}
+.tagline{font-family:'Kalnia',serif;font-weight:600;font-size:20px;margin:6px 0 0}
+.subtitle{font-size:14px;opacity:.75;margin:4px 0 12px}
+.date-pill{display:inline-block;background:#fff;border-radius:999px;padding:8px 18px;font-weight:500;font-size:14px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.section{border-radius:18px;padding:22px 24px;margin-bottom:16px}
+.bg-coral{background:var(--coral);color:#fff}.bg-yellow{background:var(--yellow)}.bg-lavender{background:var(--lav)}.bg-sky{background:var(--sky)}.bg-pink{background:var(--pink)}.bg-cream{background:var(--cream)}
+.section-title{font-family:'Kalnia',serif;font-weight:600;font-size:22px;margin:0 0 12px;display:flex;align-items:center;gap:10px}
+.badge{background:#fff;width:34px;height:34px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:18px}
 ul.items{list-style:none;margin:0;padding:0}
-ul.items li{padding:8px 0;border-bottom:2px dashed rgba(58,44,40,.25);font-size:15px;line-height:1.4}
+ul.items li{padding:9px 0;border-bottom:2px dashed rgba(58,44,40,.25);font-size:15px;line-height:1.45}
 .bg-coral ul.items li{border-bottom-color:rgba(255,255,255,.5)}
 ul.items li:last-child{border-bottom:none}
-ul.items a{color:inherit;font-size:12px;opacity:.8}
-.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-@media(max-width:600px){.grid-2{grid-template-columns:1fr}}
-.grid-2 h3{font-family:'Kalnia',serif;font-size:16px;margin:0 0 4px;color:var(--cream-dark)}
-.placeholder-box{border:2px dashed currentColor;border-radius:12px;padding:14px;text-align:center;font-size:15px;opacity:.9}
-.footer{text-align:center;font-size:14px;margin-top:22px}
+ul.items li b{font-weight:600}
+a{color:inherit;font-weight:500}
+.src{font-size:12px;opacity:.8}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.grid-2 h3{font-family:'Kalnia',serif;font-size:16px;margin:0 0 6px;color:var(--cream-dark)}
+.placeholder-box{background:rgba(255,255,255,.55);border:2px dashed rgba(58,44,40,.3);border-radius:12px;padding:14px;font-size:14px}
+.footer{text-align:center;font-size:14px;margin-top:24px;opacity:.85}
+@media(max-width:600px){.grid-2{grid-template-columns:1fr}.brand{font-size:42px}}
 </style></head><body><div class="page">
-<div class="header"><h1 class="brand">B<span class="k">K</span>REATIVE</h1><p class="tagline">Team Daily Briefing</p><p class="subtitle">Your morning cheat-sheet</p><span class="date-pill">Tuesday, 6 October 2026 · 9:00 AM MYT</span></div>
+<div class="header">
+<h1 class="brand"><span>B</span><span class="k">K</span><span>REATIVE</span></h1>
+<p class="tagline">Team Daily Briefing</p>
+<p class="subtitle">Your morning cheat-sheet for content, trends &amp; shoots</p>
+<span class="date-pill">Wednesday, 7 October 2026 · 9:00 AM MYT</span>
+</div>
 
 <div class="section bg-coral"><h2 class="section-title"><span class="badge">🎬</span>Today's Shoots</h2>
-<div class="placeholder-box">No shoots scheduled today.</div></div>
+<ul class="items"><li><b>Cheevit Cheeva Shoot</b> — 1:00 – 3:00 PM. Location: not listed in calendar. Crew/guests: Brenda Lye only on the invite.</li></ul></div>
 
-<div class="section bg-yellow"><h2 class="section-title"><span class="badge">🔥</span>Trendjack Opportunities</h2><ul class="items">
-<li><b>Two Fishes</b> – "two fishes doesn't mean put one back" format for defending reasonable takes. Easy for F&amp;B "I'll have two" content.</li>
-<li><b>Be OK (Ingrid Michaelson)</b> – upbeat dance + text on chaotic-but-fine moments. Great for relatable behind-the-scenes.</li>
-<li><b>Ramalama costume walk &amp; pumpkin head illusion</b> – Halloween reveals; plan quick spooky-season posts before 31 Oct.</li>
-<li><b>Fan transition</b> – outfit/look changes hidden by a fan blade. Fits beauty, hotel and fashion clients.</li>
-<li><b>Answer in One Word</b> – blunt one-word replies; cheap to shoot for any brand FAQ. <a href="https://newengen.com/insights/october-tiktok-trends/">Source</a></li>
-</ul></div>
+<div class="section bg-yellow"><h2 class="section-title"><span class="badge">🔥</span>Trendjack Opportunities</h2>
+<ul class="items">
+<li><b>"Two Fishes" audio</b> — calmly defending a take nobody asked about. Easy for F&amp;B "hot take" content (e.g. pineapple on pizza).</li>
+<li><b>Pumpkin Head Illusion</b> — hold a prop up to the lens to hide someone's head. Swap pumpkin for a cake, bowl or product.</li>
+<li><b>Fan Transition</b> — overhead outfit/look changes with a fan-blade wipe. Great for beauty, fitness and hotel looks.</li>
+<li><b>"Answer in One Word"</b> — one-word replies to personal questions. Quick Q&amp;A format for founders and staff.</li>
+<li><b>Halloween builds</b> — Ramalama costume walk and "Be OK" chaos-text dances ahead of 31 Oct.</li>
+<li class="src">Source: <a href="https://newengen.com/insights/october-tiktok-trends/">NewEngen – October TikTok Trends</a></li></ul></div>
 
 <div class="section bg-lavender"><h2 class="section-title"><span class="badge">📱</span>Platform &amp; Algorithm Updates</h2>
-<div class="placeholder-box">No verified fresh platform updates found this morning. Check Social Media Today and Instagram/TikTok newsrooms directly before relying on any change.<br><a href="https://www.socialmediatoday.com/">socialmediatoday.com</a></div></div>
+<ul class="items">
+<li><b>TikTok:</b> 60-second voice comments (18+), comment polls with up to 5 options, photo carousel comments.</li>
+<li><b>Instagram:</b> clickable links in organic posts/Reels (Meta One Advanced+), Partnership Ads for live video, add tagged posts to grid without reposting.</li>
+<li><b>Threads:</b> podcast toolkit with Podcast Insights, "Raise Hand" in live chats.</li>
+<li><b>LinkedIn:</b> Post Proofreader replaces AI rewriter; AI-slop flags now show in post analytics.</li>
+<li><b>X:</b> Cashtag trading (US), legal reach-limit notices in performance reports.</li>
+<li class="src">Source: <a href="https://www.socialpilot.co/blog/social-media-updates">SocialPilot – Social Media Updates 2026</a> (Sept 2026 changes; rollout varies by region)</li></ul></div>
 
-<div class="section bg-sky"><h2 class="section-title"><span class="badge">🍜</span>F&amp;B News</h2><ul class="items">
-<li><b>Halloween food content window</b> – pumpkin/spooky menus and costume-reveal formats suit cafés and restaurants.</li>
-<li><b>Short-form menu storytelling</b> keeps showing up in 2026 restaurant guides. <a href="https://flipdish.com/resources/blog/social-media-strategies-restaurants">Source</a></li>
-<li><b>World Egg Day (9 Oct)</b> and <b>World Food Day (16 Oct)</b> are easy food hooks.</li>
-</ul></div>
+<div class="section bg-sky"><h2 class="section-title"><span class="badge">🍜</span>F&amp;B News</h2>
+<ul class="items">
+<li><b>Chaos cakes</b> — colourful, whimsical desserts growing fast on Instagram.</li>
+<li><b>Pasta chips</b> — air-fried snack climbing on TikTok.</li>
+<li><b>Butter boards</b> — styled spreads still working for TikTok food content.</li>
+<li><b>Zero-waste dining</b> — rising sustainability conversation on Facebook.</li>
+<li class="src">Source: <a href="https://tastewise.io/blog/social-media-food-trends">Tastewise – Social Media Food Trends</a></li></ul></div>
 
-<div class="section bg-pink"><h2 class="section-title"><span class="badge">💆</span>Lifestyle News</h2><ul class="items">
-<li><b>World Mental Health Day (10 Oct)</b> – wellness and spa clients can lead with calm, self-care content.</li>
-<li><b>Fan transition trend</b> works for beauty "get ready with me" and hotel outfit-of-the-stay posts.</li>
-<li><b>Wellness benchmarks</b> for 2026 engagement. <a href="https://www.webtonic.io/blog/health-wellness-social-media-marketing-statistics">Source</a></li>
-</ul></div>
+<div class="section bg-pink"><h2 class="section-title"><span class="badge">🧘</span>Lifestyle News</h2>
+<ul class="items">
+<li><b>Sleep as the foundation</b> — hotels pushing sleep-branded rooms and amenities.</li>
+<li><b>Mobility before strength</b> — yoga, calisthenics and stretching classes over machine workouts.</li>
+<li><b>Community dining</b> — shared-table, Blue Zones-style meals in hospitality.</li>
+<li><b>Systems over willpower</b> — wellness built into the environment, not guest discipline.</li>
+<li class="src">Source: <a href="https://www.hotel-online.com/news/longevity-trends-to-consider-for-the-back-half-of-2026">Hotel Online – Longevity Trends, back half of 2026</a></li></ul></div>
 
-<div class="section bg-coral"><h2 class="section-title"><span class="badge">🇲🇾</span>Malaysia &amp; Klang Valley</h2><ul class="items">
-<li><b>Harimau Malaya third at FIFA ASEAN Cup</b> after beating Vietnam – a sports-pride hook for quick local posts.</li>
-<li><b>Public debt at RM1.295 trillion (63.9% of GDP)</b> – cost-of-living talk likely; keep value-driven content sensitive.</li>
-<li><b>Loke presses MYEG and Zetrix AI over RM314m arrears</b> – political; likely avoid for brand content.</li>
-<li><b>Rainy-season thunderstorm/flash flood warnings</b> are common in Klang Valley – plan shoots with rain backups. <a href="https://www.malaymail.com/news/malaysia">Malay Mail</a></li>
-</ul></div>
+<div class="section bg-coral"><h2 class="section-title"><span class="badge">🇲🇾</span>Malaysia &amp; Klang Valley</h2>
+<ul class="items">
+<li><b>Monsoon transition from 9 Oct</b> — thunderstorms, flash floods and fallen trees expected. Plan outdoor shoots with rain backups; "rainy day cravings" angles for F&amp;B.</li>
+<li><b>PJS Toll Plaza crash</b> — fatal e-hailing accident involving a driver who tested positive for drugs. Sensitive: avoid playful content near this.</li>
+<li><b>KLIA tightens security</b> for flights to high-risk destinations (pat-downs, full baggage checks) — expect travel chatter.</li>
+<li><b>Scam call-centre raid</b> in Pahang — scam-awareness content stays relevant.</li>
+<li class="src">Source: <a href="https://www.malaymail.com/news/malaysia" style="color:#fff">Malay Mail</a></li></ul></div>
 
 <div class="section bg-cream"><h2 class="section-title"><span class="badge">📅</span>Dates to Prep Content For</h2>
-<div class="grid-2"><div><h3>International</h3><ul class="items">
-<li><b>7 Oct</b> World Cotton Day</li><li><b>9 Oct</b> World Egg Day</li><li><b>10 Oct</b> World Mental Health Day</li><li><b>16 Oct</b> World Food Day</li><li><b>31 Oct</b> Halloween – start planning now</li>
-</ul></div><div><h3>Malaysia</h3><ul class="items">
-<li><b>10 Oct</b> Governor of Sarawak's Birthday (Sarawak only)</li><li><b>6 Nov</b> Sultan of Perak's Birthday</li><li><b>8 Nov</b> Deepavali – start planning</li><li><b>11 Dec</b> Sultan of Selangor's Birthday – Selangor holiday</li>
-</ul></div></div>
-<p style="font-size:12px;margin:10px 0 0"><a href="https://calendarific.com/holidays/2026/MY">Holiday source</a> · <a href="https://www.boldsky.com/insync/october-2026-important-days-and-events-complete-list-of-national-and-international-observances-172987.html">Observances source</a> · dates may be provisional.</p></div>
+<div class="grid-2">
+<div><h3>International</h3><ul class="items">
+<li><b>10 Oct — World Mental Health Day</b></li>
+<li><b>18 Oct — World Menopause Day</b></li>
+<li><b>24 Oct — United Nations Day</b></li>
+<li><b>31 Oct — Halloween</b></li>
+<li><b>All Oct — Breast Cancer Awareness Month</b>, ADHD Awareness Month</li>
+<li class="src"><a href="https://www.getapeptalk.com/journal/awareness-days-cultural-calendar-for-october-2026">Source</a></li></ul></div>
+<div><h3>Malaysia</h3><ul class="items">
+<li><b>No public holiday in the next few days.</b></li>
+<li><b>8 Nov (Sun) — Deepavali</b>, with 9 Nov (Mon) off in lieu in Selangor. Start planning now.</li>
+<li class="src"><a href="https://www.officeholidays.com/holidays/malaysia/selangor/diwali">Source</a></li></ul></div>
+</div></div>
 
-<div class="section bg-lavender"><h2 class="section-title"><span class="badge">🌤️</span>Weather</h2>
-<div class="placeholder-box">No shoot locations to check today.</div></div>
+<div class="section bg-lavender"><h2 class="section-title"><span class="badge">⛅</span>Weather</h2>
+<div class="placeholder-box">No shoot locations to check today. The Cheevit Cheeva shoot has no location in the calendar. Note monsoon transition begins 9 Oct.</div></div>
 
 <div class="footer">Focus on your business, let us BKreative for u ♥</div>
 </div></body></html>
