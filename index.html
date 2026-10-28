@@ -1,115 +1,80 @@
-<!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>BKreative Daily Briefing – 27 Oct 2026</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Jost:wght@400;500;600&family=Kalnia:wght@600&display=swap" rel="stylesheet">
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BKreative Daily Briefing – 28 Oct 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Jost:wght@400;500&family=Kalnia:wght@600&display=swap" rel="stylesheet">
 <style>
-:root{--coral:#f17166;--coral-dark:#b8453b;--yellow:#ffd217;--yellow-dark:#8a6d00;--lavender:#e7d7ff;--lavender-dark:#5b3fa0;--sky:#c5ecff;--sky-dark:#1a6f94;--pink:#ffd5e3;--pink-dark:#a13c5c;--cream:#feffd5;--cream-dark:#6b6600;--ink:#3a2c28}
-*{box-sizing:border-box}
-body{margin:0;font-family:'Jost',sans-serif;color:var(--ink);background:linear-gradient(160deg,#feffd5 0%,#e7d7ff 50%,#c5ecff 100%) fixed;min-height:100vh}
-.page{max-width:760px;margin:0 auto;padding:28px 16px 40px}
-.header{text-align:center;margin-bottom:22px}
-.brand{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:54px;letter-spacing:2px;color:var(--coral);margin:0;line-height:1}
-.brand .k{color:var(--yellow)}
-.tagline{font-family:'Kalnia',serif;font-weight:600;font-size:18px;margin:6px 0 12px}
-.subtitle{font-size:14px;margin:0 0 12px;opacity:.8}
-.date-pill{display:inline-block;background:#fff;border-radius:999px;padding:7px 18px;font-weight:500;font-size:14px;box-shadow:0 2px 8px rgba(58,44,40,.1)}
-.section{border-radius:18px;padding:20px 22px;margin-bottom:16px;box-shadow:0 3px 10px rgba(58,44,40,.08)}
-.bg-coral{background:var(--coral);color:#fff}.bg-yellow{background:var(--yellow)}.bg-lavender{background:var(--lavender)}.bg-sky{background:var(--sky)}.bg-pink{background:var(--pink)}.bg-cream{background:var(--cream)}
-.section-title{font-family:'Kalnia',serif;font-weight:600;font-size:22px;margin:0 0 12px;display:flex;align-items:center;gap:10px}
-.badge{width:34px;height:34px;border-radius:50%;background:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:18px;flex:none}
-ul.items{list-style:none;margin:0;padding:0}
-ul.items li{padding:9px 0;border-bottom:2px dashed rgba(58,44,40,.25);font-size:15px;line-height:1.45}
+:root{--coral:#f17166;--coral-dark:#b8453b;--yellow:#ffd217;--yellow-dark:#8a6d00;--lav:#e7d7ff;--lav-dark:#5b3fa0;--sky:#c5ecff;--sky-dark:#1a6f94;--pink:#ffd5e3;--pink-dark:#a13c5c;--cream:#feffd5;--cream-dark:#6b6600;--ink:#3a2c28}
+*{box-sizing:border-box}body{margin:0;font-family:'Jost',sans-serif;color:var(--ink);background:linear-gradient(160deg,var(--cream),var(--lav) 55%,var(--sky));min-height:100vh}
+.page{max-width:760px;margin:0 auto;padding:32px 16px 40px}.header{text-align:center;margin-bottom:24px}
+.brand{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:54px;letter-spacing:2px;margin:0;color:var(--coral)}.brand .k{color:var(--yellow)}
+.tagline{font-family:'Kalnia',serif;font-weight:600;font-size:20px;margin:0}.subtitle{margin:4px 0 12px;font-size:14px}
+.date-pill{display:inline-block;background:#fff;border-radius:999px;padding:6px 16px;font-weight:500;font-size:14px}
+.section{border-radius:18px;padding:20px 22px;margin-bottom:16px}
+.bg-coral{background:var(--coral);color:#fff}.bg-yellow{background:var(--yellow)}.bg-lavender{background:var(--lav)}.bg-sky{background:var(--sky)}.bg-pink{background:var(--pink)}.bg-cream{background:var(--cream)}
+.section-title{font-family:'Kalnia',serif;font-weight:600;font-size:22px;margin:0 0 10px;display:flex;align-items:center;gap:10px}
+.badge{background:#fff;border-radius:50%;width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;font-size:17px}
+ul.items{list-style:none;margin:0;padding:0}ul.items li{padding:8px 0;border-bottom:1.5px dashed rgba(58,44,40,.25);font-size:15px;line-height:1.45}ul.items li:last-child{border-bottom:0}
 .bg-coral ul.items li{border-bottom-color:rgba(255,255,255,.5)}
-ul.items li:last-child{border-bottom:none}
-ul.items li b{font-weight:600}
-.bg-yellow b{color:var(--yellow-dark)}.bg-lavender b{color:var(--lavender-dark)}.bg-sky b{color:var(--sky-dark)}.bg-pink b{color:var(--pink-dark)}.bg-cream b{color:var(--cream-dark)}
-.bg-coral b{color:#fff;text-decoration:underline;text-decoration-color:rgba(255,255,255,.5)}
-.src{font-size:12px;opacity:.75;margin-top:8px}
-.src a{color:inherit}
-a{color:inherit}
-.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.grid-2 h3{font-family:'Kalnia',serif;font-size:16px;margin:0 0 6px;color:var(--cream-dark)}
-.placeholder-box{background:rgba(255,255,255,.6);border:2px dashed rgba(58,44,40,.3);border-radius:12px;padding:12px;font-size:14px}
-.footer{text-align:center;font-family:'Kalnia',serif;font-size:16px;margin-top:24px;color:var(--coral-dark)}
-@media(max-width:600px){.grid-2{grid-template-columns:1fr}.brand{font-size:42px}}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}@media(max-width:600px){.grid-2{grid-template-columns:1fr}}
+.grid-2 h3{font-family:'Kalnia',serif;font-size:16px;margin:0 0 6px}
+.placeholder-box{border:2px dashed rgba(255,255,255,.7);border-radius:12px;padding:12px;text-align:center;font-size:14px}
+.bg-lavender .placeholder-box{border-color:var(--lav-dark)}
+a{color:inherit;text-decoration:underline}.src{font-size:12px;opacity:.8;margin-top:8px}
+.footer{text-align:center;font-family:'Kalnia',serif;margin-top:24px;font-size:15px}
 </style></head><body><div class="page">
-<div class="header">
-<h1 class="brand">B<span class="k">K</span>REATIVE</h1>
-<div class="tagline">Team Daily Briefing</div>
-<p class="subtitle">Your 5-minute scan before the day starts</p>
-<span class="date-pill">Tuesday, 27 October 2026 · 9:00 AM MYT</span>
-</div>
+<div class="header"><h1 class="brand"><span>B</span><span class="k">K</span><span>REATIVE</span></h1><p class="tagline">Team Daily Briefing</p><p class="subtitle">Your morning cheat-sheet</p><span class="date-pill">Wednesday, 28 October 2026 · 9:00 AM MYT</span></div>
 
 <div class="section bg-coral"><h2 class="section-title"><span class="badge">🎬</span>Today's Shoots</h2>
-<ul class="items">
-<li><b>Car brands shoot</b> — 1:00 – 3:30 PM</li>
-<li><b>Location:</b> Publika Shopping Gallery, Solaris Dutamas</li>
-<li><b>Crew note:</b> Tania is on MC leave 26–28 Oct (calendar shows no other guests listed on the event)</li>
-</ul></div>
+<ul class="items"><li><b>Chara shoot, 4:00 – 6:00 PM</b> — no location or guest list on the calendar yet. Confirm venue &amp; crew before lunch.</li>
+<li><b>Tania is on MC</b> (26 – 28 Oct) — plan around her absence today.</li></ul></div>
 
 <div class="section bg-yellow"><h2 class="section-title"><span class="badge">🔥</span>Trendjack Opportunities</h2>
 <ul class="items">
-<li><b>Ramalama Costume Walk</b> — slow walk-in reveal for Halloween, set to Róisín Murphy's "Ramalama (Bang Bang)". Easy for staff or product reveals.</li>
-<li><b>Fan Transition</b> — overhead outfit/product changes hidden by fan-blade wipes. Great for beauty and fashion-adjacent clients.</li>
-<li><b>"Be OK" + relatable confessions</b> — cheerful dance with on-screen text. Works for F&amp;B "my order vs my diet" angles.</li>
-<li><b>Pumpkin Head Illusion</b> — forced-perspective gag, quick Halloween content for cafes.</li>
-<li><b>Trending sounds:</b> girl in red "We Fell in Love in October", Taylor Swift "Patient Zero", Steve Lacy "The Feeling". Note: these are US chart data — check availability in MY before committing.</li>
-</ul>
-<div class="src">Source: <a href="https://newengen.com/insights/october-tiktok-trends/">New Engen – TikTok Trends Oct 2026</a></div></div>
+<li><b>Halloween (Sat 31 Oct) formats:</b> "Ramalama Costume Walk" slow reveals and "Pumpkin Head Illusion" forced-perspective clips — easy for F&amp;B and hotel clients.</li>
+<li><b>"Two Fishes":</b> confidently defending questionable opinions — great for "hot take" food debates (e.g. nasi lemak with/without egg).</li>
+<li><b>Fan Transition:</b> outfit change hidden by a fan wipe — beauty &amp; lifestyle clients.</li>
+<li><b>"Be OK" dance + relatable confessions</b> and "Answer in One Word" — quick behind-the-scenes or team content.</li>
+<li><b>Trending audio:</b> "We Fell in Love in October" (girl in red), "Patient Zero" (Taylor Swift). Check availability for Malaysian business accounts.</li></ul>
+<div class="src">Source: <a href="https://newengen.com/insights/october-tiktok-trends/">New Engen – October TikTok Trends</a> (US-led trends; check they've landed locally).</div></div>
 
 <div class="section bg-lavender"><h2 class="section-title"><span class="badge">📱</span>Platform &amp; Algorithm Updates</h2>
 <ul class="items">
-<li><b>Instagram "Features"</b> — new upload type testing videos up to 90 minutes, plus "Clips as Reels" that link back to the full video. Tests limited to Brazil, small US group next. Not in MY yet.</li>
-<li><b>Instagram AI labels</b> — "AI creator" is now "AI-generated profile"; unlabeled AI-person profiles get reduced reach. Also new "Add to grid" for tagged posts.</li>
-<li><b>Threads</b> — new podcast tools (RSS link, new-episode reminders) and a redesigned Insights dashboard.</li>
-<li><b>TikTok</b> — agency tiers now split into Agency Partner / Premier Agency Partner; new ad tools announced incl. Buy Direct in-app checkout and Smart+ Creative Selection.</li>
-</ul>
-<div class="src">Sources: <a href="https://techcrunch.com/2026/10/26/watch-out-youtube-instagram-goes-from-short-form-to-90-minute-videos/">TechCrunch</a> · <a href="https://blog.gainapp.com/social-media-updates/">Gain</a> · <a href="https://socialbee.com/blog/tiktok-updates-news-features/">SocialBee</a></div></div>
+<li><b>TikTok comments upgrade:</b> 60-sec voice comments, pinnable polls (up to 5 options), photo carousel comments. Also a new Premier Agency Partner badge tier.</li>
+<li><b>Instagram:</b> <b>clickable links</b> in organic posts/Reels rolling out (higher Meta One tiers only); creator Lives can become Partnership Ads; tagged posts can be added to your grid.</li>
+<li><b>Threads:</b> podcast toolkit and live chats with raise-hand.</li>
+<li><b>LinkedIn:</b> now flags "AI slop" in post analytics and reduces reach of low-quality automated posts — keep B2B copy human.</li>
+<li><b>X:</b> old ad-revenue sharing ended 7 Sept, replaced by Original Content Rewards.</li></ul>
+<div class="src">Source: <a href="https://www.socialpilot.co/blog/social-media-updates">SocialPilot – Social Media Updates</a> (last updated 7 Oct; nothing newer found).</div></div>
 
-<div class="section bg-sky"><h2 class="section-title"><span class="badge">🍜</span>F&amp;B Client News</h2>
+<div class="section bg-sky"><h2 class="section-title"><span class="badge">🍜</span>F&amp;B News</h2>
 <ul class="items">
-<li><b>New KL/PJ openings to reference:</b> Papagi Homemade Pasta (Taman Melawati) with bunga telang fettuccine; Mezze Mazi (Ara Damansara) Levantine sharing plates.</li>
-<li><b>Flavour mash-ups are in</b> — Unstable Concoction Cafe (Sri Hartamas) pairs coffee with chilli cheong; Safehouse @ Sky Society has a Snickers-inspired drink.</li>
-<li><b>Solo dining angle</b> — Tomtom Club (Jalan Petaling) offers individual hotpot sets. Good hook for "dining alone" content.</li>
-</ul>
-<div class="src">Source: <a href="https://monomalaysia.com/new-cafes-restaurants-kl-pj-october-2026/">MONO Malaysia</a></div></div>
+<li><b>Upgraded instant noodles &amp; pasta chips</b> keep doing well on TikTok.</li>
+<li><b>Chaos cakes</b> and Southeast Asian-inspired seafood lead on Instagram.</li>
+<li><b>Zero-waste dining and snack plates</b> are a Facebook talking point.</li></ul>
+<div class="src">Source: <a href="https://tastewise.io/blog/social-media-food-trends">Tastewise</a> — note: dated Jan 2025, treat as directional.</div></div>
 
-<div class="section bg-pink"><h2 class="section-title"><span class="badge">💆</span>Lifestyle News</h2>
+<div class="section bg-pink"><h2 class="section-title"><span class="badge">🧖</span>Lifestyle News</h2>
 <ul class="items">
-<li><b>Beauty + wellness blending</b> — IPSY launches a quarterly "IPSY Wellness" tier (skin, hair, total wellness).</li>
-<li><b>Gourmand fragrance</b> — Gap's "Bliss" (butterscotch, cocoa, vanilla bourbon) is leaning into the holiday scent trend.</li>
-<li><b>Skincare M&amp;A</b> — Galderma to acquire ZO Skin Health for US$1.5bn.</li>
-<li><b>Wellness hospitality</b> keeps growing as a theme in trade press — useful framing for hotel and spa clients.</li>
-</ul>
-<div class="src">Sources: <a href="https://cew.org/beauty_news/beautys-top-headlines-october-20-2026/">CEW</a> · <a href="https://www.glossy.co/beauty/wellness/the-wellness-hospitality-opportunity-is-growing-plus-news/">Glossy</a></div></div>
+<li><b>Sleep as a selling point:</b> sound-isolated rooms and sleep-focused categories for hotels.</li>
+<li><b>Digital detox &amp; phone-free spaces</b> for wellness and retreat clients.</li>
+<li><b>Mindful drinking:</b> non-alcohol options with real atmosphere — works for cafés and hotels.</li>
+<li><b>Functional movement &amp; community classes</b> (yoga, dance, calisthenics) over solo machine workouts; women's health is growing.</li></ul>
+<div class="src">Source: <a href="https://www.hotel-online.com/news/longevity-trends-to-consider-for-the-back-half-of-2026">Hotel Online – Longevity Trends</a></div></div>
 
 <div class="section bg-coral"><h2 class="section-title"><span class="badge">🇲🇾</span>Malaysia &amp; Klang Valley</h2>
 <ul class="items">
-<li><b>Budget 2027: RM100mil for Klang Valley flash floods</b> — retention ponds and river maintenance, plus a 30-year review of Batu and Klang Gates dams.</li>
-<li><b>Flash floods hit USJ to Shah Alam</b> on 17 Oct after an afternoon downpour. Rain-ready content and shoot backup plans matter.</li>
-<li><b>Thunderstorm warnings</b> have covered the Klang Valley in recent days, and air quality worsened in 28 areas mid-October.</li>
-<li><b>Motoring buzz</b> — Sepang hosted the F1 Bahrain GP stand-in (first MY F1 race in nine years) and Tokyo Auto Salon Malaysia ran earlier this month. Relevant to today's car brands shoot.</li>
-</ul>
-<div class="src">Sources: <a href="https://says.com/my/news/gomen/klang-valley-flash-flood-mitigation-plan">SAYS</a> · <a href="https://www.malaymail.com/news/malaysia/2026/10/17/from-usj-to-shah-alam-flash-floods-disrupt-klang-valley-roads-after-afternoon-downpour/239494">Malay Mail</a> · <a href="https://www.malaymail.com/news/malaysia/2026/10/14/air-quality-deteriorates-in-28-areas-klang-valley-johor-hotspots-rise/239064">Malay Mail</a> · <a href="https://www.malaymail.com/news/malaysia/2026/10/03/bumper-weekend-in-malaysia-f1-football-legends-concerts-and-comedy-shows-set-to-pack-klang-valley/237310">Malay Mail</a></div></div>
+<li><b>Budget 2027 is coming with a cost-of-living focus</b> — angles on value meals, savings tips, "worth it" reviews.</li>
+<li><b>Wet-season thunderstorms and flash floods</b> have repeatedly hit the Klang Valley — check MetMalaysia warnings before outdoor shoots (incl. today's 4 PM).</li>
+<li>No verified viral Klang Valley story found today; check local feeds before posting reactive content.</li></ul>
+<div class="src">Sources: <a href="https://www.thevibes.com/articles/news/126480/budget-2027-cost-of-living-to-take-centre-stage-as-government-weighs-global-risks">The Vibes – Budget 2027</a> · <a href="https://www.thevibes.com/articles/news/55764/flash-floods-strike-klang-valley-again">The Vibes – flash floods</a> (older reports)</div></div>
 
 <div class="section bg-cream"><h2 class="section-title"><span class="badge">📅</span>Dates to Prep Content For</h2>
-<div class="grid-2">
-<div><h3>International</h3><ul class="items">
-<li><b>31 Oct</b> — Halloween (4 days away)</li>
-<li><b>1–2 Nov</b> — Día de los Muertos / All Saints' Day</li>
-<li><b>5 Nov</b> — Guy Fawkes Night</li>
-<li><b>11 Nov</b> — Remembrance Day / Veterans Day</li>
-<li><b>13 Nov</b> — World Kindness Day</li></ul></div>
+<div class="grid-2"><div><h3>International</h3><ul class="items">
+<li><b>31 Oct – Halloween</b> (in 3 days)</li><li><b>1 Nov – World Vegan Day</b></li><li><b>11 Nov – Singles' Day (11.11)</b> — start planning promos</li><li><b>13 Nov – World Kindness Day</b></li></ul></div>
 <div><h3>Malaysia</h3><ul class="items">
-<li><b>8 Nov (Sun)</b> — Deepavali; 9 Nov replacement day in most states. Start Deepavali posts now.</li>
-<li><b>11 Dec (Fri)</b> — Sultan of Selangor's Birthday (Selangor)</li>
-<li><b>25 Dec</b> — Christmas Day. Start planning.</li></ul></div>
-</div>
-<div class="src">Sources: <a href="https://getapeptalk.com/journal/awareness-days-cultural-calendar-for-november-2026">Ape Talk</a> · <a href="https://says.com/my/lifestyle/long-weekends-holidays-for-malaysia-in-2026">SAYS</a></div></div>
+<li><b>Sun 8 Nov – Deepavali</b>; <b>Mon 9 Nov replacement holiday</b> (Selangor, KL &amp; most states) → 3-day weekend from 7 Nov. Kedah/Kelantan/Terengganu: 8 Nov only. Not a holiday in Sarawak.</li>
+<li><b>5 – 31 Dec</b> — school year-end break; start planning.</li></ul></div></div>
+<div class="src">Source: <a href="https://blog.wego.com/deepavali-2026-malaysia-travel-plan/">Wego – Deepavali 2026</a>. Start Deepavali content this week.</div></div>
 
-<div class="section bg-lavender"><h2 class="section-title"><span class="badge">⛅</span>Weather for Today's Shoot</h2>
-<div class="placeholder-box"><b>Publika, KL (1:00 – 3:30 PM):</b> no live forecast could be retrieved this morning. October is inter-monsoon season, with frequent afternoon thunderstorms in the Klang Valley (warnings were issued on 22 Oct). Check <a href="https://www.met.gov.my">MetMalaysia</a> before heading out and keep an indoor backup at Publika ready.</div></div>
+<div class="section bg-lavender"><h2 class="section-title"><span class="badge">⛅</span>Shoot Weather</h2>
+<div class="placeholder-box">No shoot locations to check today — add a location to the Chara shoot event for a forecast.</div></div>
 
-<div class="footer">Focus on your business, let us BKreative for u ♥</div>
-</div></body></html>
+<div class="footer">Focus on your business, let us BKreative for u ♥</div></div></body></html>
