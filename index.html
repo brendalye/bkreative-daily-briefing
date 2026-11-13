@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BKreative Daily Briefing – 12 Nov 2026</title>
+<title>BKreative Daily Briefing – 13 Nov 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Jost:wght@400;500;600&family=Kalnia:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Jost:wght@400;500&family=Kalnia:wght@600&display=swap" rel="stylesheet">
 <style>
   :root{
     --coral:#f17166; --coral-dark:#b8453b;
@@ -18,47 +18,44 @@
     --ink:#3a2c28;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  body{
-    font-family:'Jost',sans-serif;font-weight:400;color:var(--ink);line-height:1.5;
-    background:linear-gradient(160deg,var(--cream) 0%,var(--lavender) 45%,var(--sky) 100%);
-    background-attachment:fixed;min-height:100vh;padding:32px 16px;
-  }
+  body{font-family:'Jost',sans-serif;font-weight:400;color:var(--ink);
+    background:linear-gradient(160deg,var(--cream) 0%,var(--lavender) 50%,var(--sky) 100%);
+    background-attachment:fixed;min-height:100vh;padding:32px 16px;line-height:1.5}
   .page{max-width:760px;margin:0 auto}
-  .header{text-align:center;margin-bottom:26px}
+  .header{text-align:center;margin-bottom:28px}
   .brand{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:56px;letter-spacing:2px;line-height:1;color:var(--coral)}
-  .brand .k{color:var(--yellow);-webkit-text-stroke:1px var(--yellow-dark)}
+  .brand .k{color:var(--yellow)}
   .tagline{font-family:'Kalnia',serif;font-weight:600;font-size:22px;margin-top:6px}
-  .subtitle{font-size:14px;color:var(--lavender-dark);margin-top:2px}
-  .date-pill{display:inline-block;margin-top:14px;background:#fff;border:2px solid var(--ink);border-radius:999px;padding:6px 18px;font-weight:500;font-size:14px}
-  .section{border-radius:18px;padding:22px 24px;margin-bottom:18px;box-shadow:0 4px 0 rgba(58,44,40,.12)}
+  .subtitle{font-size:14px;opacity:.75;margin-top:4px}
+  .date-pill{display:inline-block;margin-top:14px;background:#fff;border-radius:999px;padding:8px 20px;font-weight:500;font-size:14px;box-shadow:0 2px 8px rgba(58,44,40,.08)}
+  .section{border-radius:18px;padding:22px 24px;margin-bottom:18px;box-shadow:0 2px 10px rgba(58,44,40,.06)}
   .bg-coral{background:var(--coral);color:#fff}
   .bg-yellow{background:var(--yellow)}
   .bg-lavender{background:var(--lavender)}
   .bg-sky{background:var(--sky)}
   .bg-pink{background:var(--pink)}
-  .bg-cream{background:var(--cream);border:2px solid #f0eeb0}
+  .bg-cream{background:var(--cream)}
   .section-title{font-family:'Kalnia',serif;font-weight:600;font-size:21px;display:flex;align-items:center;gap:10px;margin-bottom:12px}
-  .badge{width:36px;height:36px;border-radius:50%;background:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;box-shadow:0 2px 0 rgba(0,0,0,.08)}
+  .badge{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:#fff;font-size:17px;flex-shrink:0}
+  .bg-yellow .section-title{color:var(--yellow-dark)}
+  .bg-lavender .section-title{color:var(--lavender-dark)}
+  .bg-sky .section-title{color:var(--sky-dark)}
+  .bg-pink .section-title{color:var(--pink-dark)}
+  .bg-cream .section-title{color:var(--cream-dark)}
   ul.items{list-style:none}
-  ul.items li{padding:9px 0;border-bottom:1.5px dashed rgba(58,44,40,.25);font-size:15px}
+  ul.items li{padding:9px 0;border-bottom:1.5px dashed rgba(58,44,40,.22);font-size:15px}
   .bg-coral ul.items li{border-bottom-color:rgba(255,255,255,.45)}
   ul.items li:last-child{border-bottom:none}
-  ul.items li b{font-weight:600}
+  ul.items li b{font-weight:500}
   a{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px}
-  .src{font-size:12px;opacity:.75;white-space:nowrap}
-  .bg-yellow .src{color:var(--yellow-dark);opacity:1}
-  .bg-lavender .src{color:var(--lavender-dark);opacity:1}
-  .bg-sky .src{color:var(--sky-dark);opacity:1}
-  .bg-pink .src{color:var(--pink-dark);opacity:1}
-  .bg-cream .src{color:var(--cream-dark);opacity:1}
-  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-  .col-title{font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--cream-dark);margin-bottom:4px}
-  .placeholder-box{border:2px dashed rgba(58,44,40,.35);border-radius:14px;padding:14px 16px;font-size:14px;background:rgba(255,255,255,.45)}
-  .shoot-card{background:rgba(255,255,255,.16);border-radius:14px;padding:14px 16px}
-  .shoot-card .time{font-family:'Kalnia',serif;font-size:18px}
-  .note{font-size:13px;margin-top:10px;opacity:.9}
-  .footer{text-align:center;font-family:'Kalnia',serif;font-weight:600;font-size:16px;margin:28px 0 8px;color:var(--coral-dark)}
-  @media(max-width:600px){.grid-2{grid-template-columns:1fr}.brand{font-size:44px}.section{padding:18px}}
+  .src{font-size:12px;opacity:.7;white-space:nowrap}
+  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .col-title{font-weight:500;font-size:13px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;opacity:.8}
+  .placeholder-box{background:rgba(255,255,255,.6);border:1.5px dashed rgba(58,44,40,.3);border-radius:12px;padding:14px 16px;font-size:14px}
+  .shoot-card{background:rgba(255,255,255,.18);border-radius:12px;padding:14px 16px}
+  .shoot-time{font-family:'Kalnia',serif;font-weight:600;font-size:18px}
+  .footer{text-align:center;font-size:14px;margin-top:28px;opacity:.8}
+  @media (max-width:600px){.grid-2{grid-template-columns:1fr}.brand{font-size:44px}}
 </style>
 </head>
 <body>
@@ -67,113 +64,114 @@
   <div class="header">
     <div class="brand">B<span class="k">K</span>REATIVE</div>
     <div class="tagline">Team Daily Briefing</div>
-    <div class="subtitle">Shoots, trends &amp; news to start the day</div>
-    <div class="date-pill">Thursday, 12 November 2026 · 9:00 AM MYT</div>
+    <div class="subtitle">Shoots, trends &amp; news for the social team</div>
+    <div class="date-pill">Friday, 13 November 2026 · 9:00 AM MYT</div>
   </div>
 
-  <!-- SHOOTS -->
   <div class="section bg-coral">
     <div class="section-title"><span class="badge">📸</span>Today's Shoots</div>
     <div class="shoot-card">
-      <div class="time">2:00 – 4:00 PM · Gar shoot</div>
+      <div class="shoot-time">1:00 – 5:00 PM · BAIT shoot</div>
       <ul class="items">
-        <li><b>Crew:</b> Brenda Lye (organiser), Eva Loh, Faith Chan, Beatrice Biga. All 4 confirmed.</li>
-        <li><b>Location:</b> not set in the calendar invite (a Google Meet link is attached). Please confirm the venue in the group chat.</li>
-        <li><b>Prep:</b> it's monsoon season, so pack rain cover for gear and plan an indoor backup if any part of the shoot is outdoors.</li>
+        <li><b>Crew:</b> Brenda (organiser), Bong (Sonder Studio), Eva Loh, Faith Chan, Raja Sofea Qistina</li>
+        <li><b>Location:</b> not listed on the invite, so please confirm the venue in the group chat</li>
+        <li><b>Also today:</b> 11:00 AM BKreative storytelling discussion · 5:30 PM Weekly Social Girlies Catch Up</li>
       </ul>
     </div>
   </div>
 
-  <!-- TRENDJACK -->
   <div class="section bg-yellow">
     <div class="section-title"><span class="badge">🔥</span>Trendjack Opportunities</div>
     <ul class="items">
-      <li><b>"It's Time" holiday reveal:</b> the Mariah cue with a bare-to-decorated reveal. Good for cafés and hotels putting up festive décor this month. <a class="src" href="https://newengen.com/insights/instagram-trends/">NewEngen</a></li>
-      <li><b>"Be Your Own Housewife":</b> Tate McRae's "Housewife" over hustle or behind-the-scenes clips. Works for founder stories and BTS from today's shoot. <a class="src" href="https://www.socialpilot.co/blog/tiktok-trends">SocialPilot</a></li>
-      <li><b>"And For the Lady, Perhaps…":</b> restaurant-host-style offers of "a treat for that one friend," which gets people tagging each other. Easy F&amp;B win. <a class="src" href="https://newengen.com/insights/instagram-trends/">NewEngen</a></li>
-      <li><b>"Sorry" planned-vs-actual carousels:</b> the last slide shows how it really turned out. Good for bakeries, salons and DIY reveals. <a class="src" href="https://www.socialpilot.co/blog/tiktok-trends">SocialPilot</a></li>
-      <li><b>"Add to Cart":</b> products handed into frame one at a time. Ride the post-11.11 momentum into 12.12. <a class="src" href="https://newengen.com/insights/instagram-trends/">NewEngen</a></li>
-      <li><b>Heads-up:</b> check that a sound is "Approved for Business Use" before building client content on it.</li>
+      <li><b>"I'm So Sorry" carousel:</b> a 4–5 photo dump where the last slide reveals the real outcome. Easy win for F&amp;B "expectation vs. reality" or behind-the-scenes posts. <a class="src" href="https://www.socialpilot.co/blog/tiktok-trends">SocialPilot</a></li>
+      <li><b>"AI vs. Handmade" side-by-side:</b> AI mock-up next to the real product, set to the "Dame Hombro" shoulder-bounce beat. Fits craft, bakery and beauty clients. <a class="src" href="https://www.socialpilot.co/blog/tiktok-trends">SocialPilot</a></li>
+      <li><b>"Housewife" POV glow-up:</b> a confident POV line, then lip-sync to Tate McRae. Good for salon, fitness and makeover reveals. <a class="src" href="https://www.socialpilot.co/blog/tiktok-trends">SocialPilot</a></li>
+      <li><b>The Christmas Switch:</b> feeds have moved from Halloween to festive. Start "first Christmas drink/menu" teasers now. <a class="src" href="https://www.socialpilot.co/blog/tiktok-trends">SocialPilot</a></li>
+      <li><b>TikTok Awards SEA 2026:</b> 11 Malaysian creators are nominated, including Che Sayang Kitchen for Food Creator. Winners are announced 27 Nov in Bali, which gives local creator-collab and "who's your pick?" angles. <a class="src" href="https://therakyatpost.com/trpbm/siaran-akhbar/2026/11/12/11-pencipta-kandungan-malaysia-terpilih-wakil-negara-di-tiktok-awards-southeast-asia-2026">The Rakyat Post</a></li>
     </ul>
   </div>
 
-  <!-- PLATFORM UPDATES -->
   <div class="section bg-lavender">
     <div class="section-title"><span class="badge">📱</span>Platform &amp; Algorithm Updates</div>
     <ul class="items">
-      <li><b>TikTok standalone shopping app:</b> rolling out first in select Asian countries. Watch whether Malaysia is included. <a class="src" href="https://socialmediatoday.com/">SMT</a></li>
-      <li><b>Instagram is pushing longer video:</b> it is reportedly paying creators US$50K–500K for "Features" content and has teased a TV app for Reels. Edits also gets a no-code visual effects creator. <a class="src" href="https://www.prdaily.com/social-media-updates-and-new-features-to-know-this-week-65/">PR Daily</a></li>
-      <li><b>LinkedIn unified analytics:</b> a new per-post table with followers gained, saves, sends, and in- vs out-of-network views. Useful for client reports. <a class="src" href="https://www.prdaily.com/social-media-updates-and-new-features-to-know-this-week-65/">PR Daily</a></li>
-      <li><b>Threads:</b> advanced search filters (by date and topic) are live, and custom reactions are in testing. <a class="src" href="https://socialmediatoday.com/">SMT</a></li>
-      <li><b>X video clipping and creator pay:</b> users can share credited clips of creator videos, and invited creators are paid for 15 original videos over 15 days. <a class="src" href="https://socialmediatoday.com/">SMT</a></li>
-      <li><b>Facebook ToS update paused:</b> the change critics said could allow scraping of business content is on hold. Current terms stay if the pause runs past 20 Nov. <a class="src" href="https://www.prdaily.com/social-media-updates-and-new-features-to-know-this-week-65/">PR Daily</a></li>
+      <li><b>Instagram Edits gets a VFX creator:</b> build custom effects without code, and approved ones can be used in Stories. <a class="src" href="https://www.socialmediatoday.com/news/instagram-launches-visual-effects-creator-for-edits/874205/">SMT</a></li>
+      <li><b>Threads advanced search filters:</b> filter posts and people by date and topic, which helps with community listening for clients. <a class="src" href="https://www.socialmediatoday.com/news/threads-adds-advanced-search-filters/874339/">SMT</a></li>
+      <li><b>TikTok standalone shopping app:</b> launched in a few Asian markets first, so watch for an MY rollout. <a class="src" href="https://www.socialmediatoday.com/news/tiktok-launches-standalone-shopping-app/873952/">SMT</a></li>
+      <li><b>TikTok Shop BFCM campaign:</b> runs Nov 11–30. Line up Shop clients' promos now. <a class="src" href="https://www.socialpilot.co/?p=729111">SocialPilot</a></li>
+      <li><b>LinkedIn recommendations:</b> a new LLM-based "Profile Relevance" model surfaces posts from people users don't follow, so niche expertise posts travel further. <a class="src" href="https://www.socialmediatoday.com/news/linkedin-explains-its-improved-content-recommendation-system/874206/">SMT</a></li>
+      <li><b>X tests AI-content labels and video clipping:</b> auto-flagging of AI-generated posts, plus credited clip-sharing. <a class="src" href="https://www.socialmediatoday.com/news/x-experiments-with-expanded-ai-transparency-labels/874461/">SMT</a></li>
+      <li><b>Meta "Your Algorithm" controls:</b> users can opt topics in or out of their feeds, so clear topical consistency matters more. <a class="src" href="https://www.socialmediatoday.com/news/meta-publishes-explainer-on-your-algorithm-controls/874460/">SMT</a></li>
     </ul>
   </div>
 
-  <!-- INDUSTRY + F&B -->
   <div class="section bg-sky">
-    <div class="section-title"><span class="badge">🍜</span>F&amp;B Client News</div>
+    <div class="section-title"><span class="badge">🍜</span>F&amp;B News</div>
     <ul class="items">
-      <li><b>Holiday drinks drive traffic:</b> Starbucks (tiramisu drinks, 5 Nov), McDonald's and Dunkin' are competing on festive menus. Analysts call them "a traffic driver, not a side menu." Time to lock in clients' December LTO content. <a class="src" href="https://foodchainmagazine.com/holiday-drinks-are-the-new-front-in-the-starbucks-and-mcdonalds-race/">FoodChain</a></li>
-      <li><b>Launches as entertainment:</b> the wildest seasonal products of 2026 (colour-changing noodles, "mystery" cookies) were built to get people talking online before anyone tasted them. <a class="src" href="https://foodinstitute.com/focus/top-ten-wildest-holiday-food-beverage-products-2026/">Food Institute</a></li>
-      <li><b>Chaos cakes and zero-waste dining:</b> still rising on IG and Facebook. Good for bakery and sustainability angles. <a class="src" href="https://tastewise.io/blog/social-media-food-trends">Tastewise</a></li>
-      <li><b>AI ad tools:</b> TikTok Symphony gets a newer AI video model, worth testing for quick menu ad variations. <a class="src" href="https://socialmediatoday.com/">SMT</a></li>
+      <li><b>Industry:</b> Priceline's AI agent is running in Snapchat ads for the holiday rush, and Disney is staging a TikTok Shop holiday event with 20+ brands. AI plus social commerce is the season's playbook. <a class="src" href="https://www.marketingdive.com/news/pricelines-ai-agent-penny-lands-in-snapchat-ads-amid-holiday-rush/874247/">Marketing Dive</a></li>
+      <li><b>Chaos cakes on IG:</b> colourful, playful cakes, with posts up 45%. A strong visual for bakery and café clients. <a class="src" href="https://tastewise.io/blog/social-media-food-trends">Tastewise</a></li>
+      <li><b>Butter boards &amp; pasta chips on TikTok:</b> easy, shareable "make it at home" formats. <a class="src" href="https://tastewise.io/blog/social-media-food-trends">Tastewise</a></li>
+      <li><b>Halal traceability for chicken:</b> proposed rules would let consumers check a chicken's slaughterhouse source and halal status. Transparency content is a good angle for restaurant clients. <a class="src" href="https://www.malaymail.com/news/malaysia/2026/11/12/consumers-in-malaysia-may-soon-be-able-to-check-chickens-halal-status-under-proposed-new-rules/243020">Malay Mail</a></li>
+      <li><b>KL openings buzz:</b> Ombak KLCC (37 F&amp;B stores) and new openings in KL/PJ keep "new spot to try" content performing. <a class="src" href="https://zafigo.com/lifestyle/new-restaurants-and-cafes-just-opened-in-kl-pj/">Zafigo</a></li>
     </ul>
   </div>
 
-  <!-- LIFESTYLE -->
   <div class="section bg-pink">
-    <div class="section-title"><span class="badge">🧘</span>Lifestyle News</div>
+    <div class="section-title"><span class="badge">🌸</span>Lifestyle News</div>
     <ul class="items">
-      <li><b>Global Wellness Summit is happening now (10–13 Nov):</b> it's being held next door in Phuket. 2026 trends include neurowellness, skin longevity and the "festivalization" of wellness. <a class="src" href="https://www.globalwellnesssummit.com/">GWS</a></li>
-      <li><b>Hotels are moving into wellness:</b> sleep menus, longevity programmes and spa tie-ups with beauty brands. A good angle for hotel and spa clients. <a class="src" href="https://www.glossy.co/beauty/wellness/the-wellness-hospitality-opportunity-is-growing-plus-news/">Glossy</a></li>
-      <li><b>"Fourth spaces":</b> McKinsey's Future of Wellness 2027 report flags wellness venues as social hangouts, which is content gold for gyms and studios. <a class="src" href="https://www.globalwellnesssummit.com/">GWS</a></li>
-      <li><b>Beauty:</b> brands are being pushed toward hyper-personalisation and inclusivity, and shoppers are holding out for Black Friday. Line up promo content now. <a class="src" href="https://theindustry.beauty/">TheIndustry.beauty</a></li>
+      <li><b>Home-skincare boom:</b> Malaysian salons are countering at-home routines with "treatments you can't DIY" (e.g. Beauté Library's cold-wave facial). <a class="src" href="https://malaymail.com/news/life/2026/10/26/home-skincare-boom-neverkilledfacial-says-emax-ceo-as-beaute-library-rolls-out-malaysia-first-cold-wave-treatment/240709">Malay Mail</a></li>
+      <li><b>Preventive skin wellness:</b> MY aesthetics is shifting from fixes to prevention, so lean on education-led content. <a class="src" href="https://www.businesstoday.com.my/2026/06/26/malaysias-aesthetic-scene-moves-toward-preventive-skin-wellness/">Business Today</a></li>
+      <li><b>Hotels:</b> creator stays, room-tour Reels and "local experience" content drive bookings more than polished ads. <a class="src" href="https://influencermarketinghub.com/social-media-trends-hotels-resorts/">IMH</a></li>
+      <li><b>Wellness and health:</b> MediAsas, a basic medical insurance/takaful plan, launches in Jan 2027, and World Diabetes Day is tomorrow. Fitness and wellness clients can tie in healthy-habit content. <a class="src" href="https://www.malaymail.com/news/malaysia/2026/11/13/mediasas-what-malaysians-need-to-know-about-the-new-basic-medical-insurance-plan/242126">Malay Mail</a></li>
+      <li><b>Instagram courts long-form creators:</b> longer tutorials and routines may get more support. <a class="src" href="https://www.socialmediatoday.com/news/instagram-tries-to-entice-long-form-creators/873820/">SMT</a></li>
     </ul>
   </div>
 
-  <!-- MALAYSIA -->
   <div class="section bg-coral">
     <div class="section-title"><span class="badge">🇲🇾</span>Malaysia &amp; Klang Valley</div>
     <ul class="items">
-      <li><b>Selangor floods rising:</b> 1,180 evacuees (330 families) in Kuala Selangor as of this morning. Pause cheerful scheduled posts targeting that area. <a class="src" href="https://www.tvsarawak.my/2026/11/12/jumlah-mangsa-banjir-di-selangor-meningkat-perak-catat-penurunan/">TVS</a></li>
-      <li><b>Daily storm warnings for KL and Selangor:</b> afternoon thunderstorms this week. Flash floods hit TTDI, Bukit Jalil and Subang earlier this month. <a class="src" href="https://www.malaymail.com/news/malaysia/2026/11/10/metmalaysia-issues-storm-warning-for-parts-of-selangor-johor-kl-and-six-other-states-until-5pm-today/242707">Malay Mail</a></li>
-      <li><b>Viral: a 1,200-drone proposal at KLCC:</b> Fazley Yaakob proposed to Vida during the TikTok Shop 11.11 concert. Big "grand gesture" meme energy. <a class="src" href="https://worldofbuzz.com/will-you-marry-me-msian-celebrity-lights-up-sky-with-1200-drones-for-grand-proposal-leaving-netizens-in-awe/">WOB</a></li>
-      <li><b>11.11 is done, 12.12 is next:</b> local shoppers are primed for the next double-date sale, so plan promo calendars now.</li>
-      <li><b>Avoid:</b> the Kepong machete-attack story and the Klang firecracker probe are trending but off-limits for brand content. <a class="src" href="https://www.malaymail.com/news/malaysia/2026/11/10/viral-video-leads-to-probe-into-firecracker-incident-in-klang/242753">Malay Mail</a></li>
+      <li><b>Selangor floods:</b> 105 mitigation projects worth RM4.28b after flash floods in Puncak Alam and Sungai Buloh, and the PM chaired a special flood meeting. Avoid tone-deaf "rainy day" posts in affected areas. <a class="src" href="https://www.thevibes.com/articles/news/129259/selangor-rolls-out-105-flood-mitigation-projects-worth-rm4.28b-amid-renewed-flooding">The Vibes</a></li>
+      <li><b>MyKomuter50 pass:</b> 30 days of unlimited KTM Komuter travel from Dec 1, with activation from Nov 16. A "car-free day out" content angle. <a class="src" href="https://www.malaymail.com/news/malaysia/2026/11/12/ktmb-mykomuter50-pass-activation-begins-nov-16-offering-30-days-of-unlimited-travel-on-selected-routes-from-dec-1/243027">Malay Mail</a></li>
+      <li><b>Cost of living:</b> the PM rejected calls to bring back GST. Value-for-money messaging still resonates. <a class="src" href="https://www.malaymail.com/news/malaysia/2026/11/12/anwar-rejects-gst-calls-says-tax-would-burden-all-malaysians-including-low-income-earners/242958">Malay Mail</a></li>
+      <li><b>Post-Deepavali return:</b> Causeway jams as travellers head home. Festive-wrap and "back to routine" posts work this week. <a class="src" href="https://www.malaymail.com/news/singapore/2026/11/12/bumper-to-bumper-on-the-causeway-as-malaysia-tailback-slows-departures/242965">Malay Mail</a></li>
+      <li><b>Viral outrage:</b> a cat dangled from a 4WD in Kluang sparked online backlash. Steer clear of animal-prank humour right now. <a class="src" href="https://www.malaymail.com/news/malaysia/2026/11/12/man-hanging-cat-from-four-wheel-drive-vehicle-in-kluang-sparks-online-outrage/243016">Malay Mail</a></li>
     </ul>
   </div>
 
-  <!-- DATES -->
   <div class="section bg-cream">
     <div class="section-title"><span class="badge">🗓️</span>Dates to Prep Content For</div>
     <div class="grid-2">
       <div>
         <div class="col-title">International</div>
         <ul class="items">
-          <li><b>13 Nov – World Kindness Day</b> (tomorrow): community and staff appreciation posts. <a class="src" href="https://getapeptalk.com/journal/awareness-days-cultural-calendar-for-november-2026">PepTalk</a></li>
-          <li><b>14 Nov – World Diabetes Day:</b> low-sugar menu and wellness angles.</li>
-          <li><b>19 Nov – International Men's Day:</b> grooming, fitness and self-care content.</li>
-          <li><b>27 Nov – Black Friday:</b> start planning promo content now.</li>
+          <li><b>Nov 13 (today):</b> World Kindness Day</li>
+          <li><b>Nov 14 (Sat):</b> World Diabetes Day</li>
+          <li><b>Nov 16:</b> International Day for Tolerance</li>
+          <li><b>Nov 19:</b> World Toilet Day / International Men's Day</li>
+          <li><b>Nov 20:</b> World Children's Day</li>
+          <li><b>Nov 27 – 30:</b> Black Friday → Cyber Monday</li>
         </ul>
       </div>
       <div>
         <div class="col-title">Malaysia</div>
         <ul class="items">
-          <li><b>Deepavali (8–9 Nov):</b> just passed. Wrap up recap posts this week. <a class="src" href="https://quickhr.co/resources/blog/malaysia-public-holiday-2026">QuickHR</a></li>
-          <li><b>12.12 sale (12 Dec):</b> one month out. Start planning.</li>
-          <li><b>11 Dec – Sultan of Selangor's Birthday</b> (Selangor holiday): plan for the long weekend (Fri). <a class="src" href="https://quickhr.co/resources/blog/malaysia-public-holiday-2026">QuickHR</a></li>
-          <li><b>25 Dec – Christmas:</b> festive menus and décor shoots should be booked by late Nov.</li>
+          <li><b>Now – Nov 30:</b> TikTok Shop BFCM campaign live</li>
+          <li><b>Nov 27:</b> TikTok Awards SEA winners revealed</li>
+          <li><b>Dec 1:</b> MyKomuter50 pass travel starts</li>
+          <li><b>Dec 11 (Fri):</b> Selangor Sultan's Birthday (state holiday, long weekend). <b>Start planning</b></li>
+          <li><b>Dec 12:</b> 12.12 sales</li>
+          <li><b>Dec 25:</b> Christmas Day (national)</li>
         </ul>
       </div>
     </div>
+    <p style="font-size:12px;opacity:.7;margin-top:10px">Sources: <a href="https://calendarific.com/holidays/2026/MY">Calendarific MY 2026</a> · <a href="https://www.careerindia.com/features/important-days-in-november-2026-national-and-international-days-067935.html">CareerIndia Nov 2026 days</a></p>
   </div>
 
-  <!-- WEATHER -->
   <div class="section bg-lavender">
-    <div class="section-title"><span class="badge">🌦️</span>Shoot Weather</div>
-    <div class="placeholder-box">No shoot locations to check today. The Gar shoot invite has no location set.</div>
-    <p class="note"><b>General Klang Valley outlook:</b> MetMalaysia has issued afternoon thunderstorm and heavy-rain warnings for KL and Selangor almost every day this week, so plan for possible rain during the 2–4 PM shoot window. <a class="src" href="https://www.nst.com.my/amp/news/nation/2026/11/1573297/thunderstorms-heavy-rain-expected-until-5pm-today">NST</a></p>
+    <div class="section-title"><span class="badge">⛅</span>Shoot Weather</div>
+    <div class="placeholder-box">
+      <b>BAIT shoot (1–5 PM):</b> no location on the invite, so we couldn't get a location-specific forecast. For Klang Valley in general, MetMalaysia has issued afternoon thunderstorm and heavy-rain warnings for KL and Selangor several times this week (often until ~5 PM). <b>If any part is outdoors, plan a wet-weather backup and wrap outdoor shots early.</b>
+      <span class="src"><a href="https://www.malaymail.com/amp/news/malaysia/2026/11/10/metmalaysia-issues-storm-warning-for-parts-of-selangor-johor-kl-and-six-other-states-until-5pm-today/242707">Malay Mail</a> · <a href="https://www.thestar.com.my/news/nation/2026/11/08/thunderstorms-and-heavy-rain-forecasted-for-11-states-kl-and-putrajaya-until-5pm">The Star</a></span>
+    </div>
   </div>
 
   <div class="footer">Focus on your business, let us BKreative for u ♥</div>
